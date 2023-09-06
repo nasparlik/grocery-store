@@ -3,41 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Make Website With Tailwind CSS</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <title>Groceries Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+    </style>
 </head>
-<body>
-    <div class="container min-w-full min-h-screen bg-center bg-cover px-28 py-5 relative">
-        <nav class="flex items-center">
-            <img src="/grocery-store/images/logo.png" class="w-40 cursor-pointer" alt="logo">
-            <ul class="flex-1 text-center">
-                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Home</a></li>
-                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">About</a></li>
-                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Features</a>
-                </li>
-                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Contact</a>
-                </li>
-            </ul>
-            <img src="/grocery-store/images/cart.png" class="w-8 cursor-pointer" alt="cart">
-        </nav>
-
-
-        <div class="text-white mt-48 max-w-xl">
-            <h1 class="text-6xl font-semibold leading-normal">Grocery<br>devlvery in <span class="font-light">15
-                    min</span></h1>
-            <p>Grocify offer a wide range of products, including fresh products, meats, dairy, baked goods and
-                non-perisable items.</p>
-            <div class="mt-10">
-                <a href="#"
-                    class="bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 hover:border border-transparent">Order
-                    Now</a>
-                <a href="#">Download App <span class="text-lg inline-block rotate-90">&#10148;</span></a>
-            </div>
+<body class="bg-gray-100">
+    <header class="bg-green-500 p-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-semibold text-white">Groceries Shop</h1>
         </div>
-        <img src="/grocery-store/images/grocery-image.png" class="w-full xl:w-1/2 xl:absolute bottom-0 right-20"
-            alt="grocery image">
-    </div>
+    </header>
+    <main class="container mx-auto mt-8">
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" alt="Product 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold">Product 1</h2>
+                    <p class="text-gray-600">Description of Product 1.</p>
+                    <p class="text-green-500 font-semibold">$10.99</p>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" alt="Product 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold">Product 2</h2>
+                    <p class="text-gray-600">Description of Product 2.</p>
+                    <p class="text-green-500 font-semibold">$8.99</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 py-4 text-white">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Groceries Shop</p>
+        </div>
+    </footer>
 </body>
 </html>
