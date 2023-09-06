@@ -4,3 +4,6 @@
     font-family: 'Poppins' sans-serif;
 }
 
+.container{
+    background-image: url('/grocery-store/images/image.png');
+}
